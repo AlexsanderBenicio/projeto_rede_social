@@ -9,54 +9,55 @@
 </head>
 <body>
     <div class="screen">
-        <div class="leftside">
-            <h1>REDE SOCIAL TERA</h1>
-            <img src="images/financial_data.png" alt="">
-            <h1>Venha fazer parte de nossos grupos de discussões<br></h1>
-            <h2>Cadastre-se ou faça seu login</h2>
-            <div class="buttons">
-                <button class="signup">Cadastre-se</button>
-                <button class="login">Login</button>
+        <div class="screen--area">
+            <div class="screen--info">
+                <h1>REDE SOCIAL FelleX</h1>
+                <img src="images/financial_data.png" alt="">
+                <h1>Venha fazer parte de nossos grupos de discussões<br></h1>
+                <h2>Cadastre-se ou faça seu login</h2>
+                <div class="buttons">
+                    <button class="signup" style="--clr:#0DDB0D">Cadastre-se<i></i></button>
+                    <button class="login" style="--clr:#0DDB0D">Login<i></i></button>
+                </div>
             </div>
-        </div>
-        <div class="rightside--creat-account">
-            <h1>Crie sua conta</h1>
-            <form action="" method="get" class="signup--Validator">
-                <label for="">
-                    Seu nome:<br>
-                    <input id="selected" type="text" name="name" data-rules="required|min=2|required-string">
-                </label>
-                <label for="">
-                    Seu e-mail:<br>
-                    <input type="text" name="email" data-rules="required|email">
-                </label>
-                <label for="">
-                    Sua senha:<br>
-                    <input type="password" name="password" data-rules="min=8">
-                </label>
-                <label for="">
-                    <input type="submit" value="Cadastrar">
-                </label>
-            </form>
-        </div>
-        <div class="rightside--access-account">
-            <h1>Acesse sua conta</h1>
-            <form action="home.html" method="get" class="login--Validator">
-                <label for="">
-                    Seu e-mail:<br>
-                    <input id="selected" type="text" name="email" data-rules="required|email">
-                </label>
-                <label for="">
-                    Sua senha:<br>
-                    <input type="password" name="password" data-rules="min=8">
-                </label>
-                <label for="">
-                    <input type="submit" value="Acessar">
-                </label>
-            </form>
-        </div>
+            <div class="creat-account">
+                <h1>Crie sua conta</h1>
+                <form action="" method="get" class="signup--Validator">
+                    <label for="">
+                        Seu nome:<br>
+                        <input id="selected" type="text" name="name" data-rules="required|min=2|required-string">
+                    </label>
+                    <label for="">
+                        Seu e-mail:<br>
+                        <input type="text" name="email" data-rules="required|email">
+                    </label>
+                    <label for="">
+                        Sua senha:<br>
+                        <input type="password" name="password" data-rules="min=8">
+                    </label>
+                    <label for="">
+                        <input type="submit" value="Cadastrar">
+                    </label>
+                </form>
+            </div>
+            <div class="access-account">
+                <h1>Acesse sua conta</h1>
+                <form action="home.html" method="get" class="login--Validator">
+                    <label for="">
+                        Seu e-mail:<br>
+                        <input id="selected" type="text" name="email" data-rules="required|email">
+                    </label>
+                    <label for="">
+                        Sua senha:<br>
+                        <input type="password" name="password" data-rules="min=8">
+                    </label>
+                    <label for="">
+                        <input type="submit" value="Acessar">
+                    </label>
+                </form>
+            </div> 
+        </div>  
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

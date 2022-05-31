@@ -149,8 +149,8 @@ let loginValidator = {
 const c = (el)=> document.querySelector(el);
 const cs = (el)=> document.querySelectorAll(el);
 
-c('.rightside--creat-account').style.display = 'none';
-c('.rightside--access-account').style.display = 'none';
+c('.creat-account').style.display = 'none';
+c('.access-account').style.display = 'none';
 
 cs('.signup, .login').forEach((item)=>{
     item.addEventListener('click', ()=>{
@@ -169,33 +169,31 @@ cs('.signup, .login').forEach((item)=>{
 function screenSignup() {
     mainScreen();
     btnSignupChangeColor();
-    c('.rightside--creat-account').style.opacity = '0';
-    c('.rightside--access-account').style.display = 'none';
-    c('.rightside--creat-account').style.display = 'block';
+    c('.creat-account').style.opacity = '0';
+    c('.access-account').style.display = 'none';
+    c('.creat-account').style.display = 'block';
     setTimeout(()=>{
-        c('.rightside--creat-account').style.opacity = '1';
-        c('.rightside--access-account').style.opacity = '0';
-        c('.rightside--creat-account').style.transition = 'all linear 0.5s';
+        c('.creat-account').style.opacity = '1';
+        c('.creat-account').style.transition = 'all linear 0.5s';
     }, 300)
 }
 function screenLogin() {
     mainScreen();
     btnLoginChangeColor();
-    c('.rightside--access-account').style.opacity = '0';
-    c('.rightside--access-account').style.display = 'block';
-    c('.rightside--creat-account').style.display = 'none';
+    c('.access-account').style.opacity = '0';
+    c('.access-account').style.display = 'block';
+    c('.creat-account').style.display = 'none';
     setTimeout(()=>{
-        c('.rightside--access-account').style.opacity = '1';
-        c('.rightside--creat-account').style.opacity = '0';
-        c('.rightside--access-account').style.right = '0';
-        c('.rightside--access-account').style.transition = 'all linear 0.5s';
+        c('.access-account').style.opacity = '1';
+        c('.access-account').style.right = '0';
+        c('.access-account').style.transition = 'all linear 0.5s';
     }, 300) 
 }
 function mainScreen() {
-    c('.leftside').style.opacity = '0';
+    c('.screen--area').style.opacity = '0';
     setTimeout(()=>{
-        c('.leftside').style.transition = 'all linear 0.5s';
-        c('.leftside').style.opacity = '1';       
+        c('.screen--area').style.transition = 'all linear 0.5s';
+        c('.screen--area').style.opacity = '1';       
     }, 300)
 }
 

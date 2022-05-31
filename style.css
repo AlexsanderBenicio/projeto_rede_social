@@ -4,79 +4,98 @@
 
 body{
     margin: 0;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .screen{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
-.leftside{
-    flex: 1;
+.screen--area{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.screen--info{
+    margin-right: 20px;
+    text-align: center;
+}
 
-.leftside img{
-    max-width: 500px;
+.screen--info img{
+    max-width: 40vw;
     height: auto;
 }
 
-.leftside h1{
-    font-size: 50px;
+.screen--info h1{
+    font-size: 30px;
     text-align: center;  
     margin: 0; 
-    color: #999; 
 } 
-.leftside h2{
+.screen--info h2{
     font-size: 25px;
     text-align: center;
-    margin-top: 15px; 
-    color: #999;   
+    margin-top: 15px;    
 } 
 
-.leftside .buttons{
+.screen--info .buttons{
     display: flex;
+    justify-content: center;
 }
 
-.leftside button{
-    width: 100px;
-    height: 30px;
+.screen--info button{
+    width: 220px;
+    height: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
-    font-size: 14px;
+    padding: 10px 30px;
     font-weight: 700;
-    background-color: black;
-    color: #999;
-    border-radius: 10px;
-    border: 2px solid #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid var(--clr);
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.rightside--creat-account, .rightside--access-account{
+.screen--info button:hover{
+    background-color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.screen--info button::before{
+    content: '';
+    position: absolute;
+}
+
+.creat-account, .access-account{
+    position: relative;
+    margin: auto;
     width: 400px;
-    background-color: #ccc;
-    padding: 50px;
-    box-shadow: 0px 0px 20px 10px #333;
+    background-color: #CED0C7;
+    border-radius: 10%;
+    padding: 30px 20px;
+    box-shadow: 
+    1px 1px 2px 2px #0DDB0D, 2px 2px 8px 4px #0DDB0D;
 }
 
-.rightside--access-account{
-    overflow: hidden;
-}
-
-.rightside--creat-account label{
+.creat-account label{
     display: block;
     margin-bottom: 20px;
 }
-.rightside--access-account label{
+.access-account label{
     display: block;
     margin-bottom: 20px;
 }
 
-.rightside--creat-account input{
+.creat-account input{
     width: 100%;
     border:1px solid #999;
     border-radius: 5px;
@@ -84,7 +103,7 @@ body{
     font-size: 14px;
     outline: 0;
 }
-.rightside--access-account input{
+.access-account input{
     width: 100%;
     border:1px solid #999;
     border-radius: 5px;
