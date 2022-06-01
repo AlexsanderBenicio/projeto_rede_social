@@ -154,7 +154,7 @@ c('.access-account').style.display = 'none';
 
 cs('.signup, .login').forEach((item)=>{
     item.addEventListener('click', ()=>{
-      switch (item.innerHTML) {
+      switch (item.textContent) {
           case "Cadastre-se":
             screenSignup();
               break;
@@ -198,16 +198,18 @@ function mainScreen() {
 }
 
 function btnSignupChangeColor() {
-    c('.login').style = '';
-    c('.signup').style.backgroundColor = '#999';
+    c('.login').style.border = '2px solid #0DDB0D';
+    c('.login').style.backgroundColor = '';
+    c('.signup').style.backgroundColor = '#0DDB0D';
     c('.signup').style.color = '#000';
-    c('.signup').style.border = '2px solid #000';
+    c('.signup').style.border = '2px solid #0DDB0D';
 }
 function btnLoginChangeColor() {
-    c('.signup').style = '';
-    c('.login').style.backgroundColor = '#999';
+    c('.signup').style.border = '2px solid #0DDB0D';
+    c('.signup').style.backgroundColor = '';
+    c('.login').style.backgroundColor = '#0DDB0D';
     c('.login').style.color = '#000';
-    c('.login').style.border = '2px solid #000';
+    c('.login').style.border = '2px solid #0DDB0D';
 }
 let form = document.querySelector(".signup--Validator");
 let form2 = document.querySelector(".login--Validator");
