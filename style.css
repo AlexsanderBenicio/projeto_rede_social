@@ -1,41 +1,39 @@
-*{
+*{  margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
 
-body{
-    margin: 0;
-    background-color: #CED0C7;
-    color: #000000;
 }
 
 .screen{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
+    background: #9951E8;
+    color: #FFFFFF;
 }
 
-.screen--area{
+.main--screen{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
+    
 }
 .screen--info{
     margin-right: 20px;
+    margin-left: 20px;
     text-align: center;
 }
 
 .screen--info img{
-    max-width: 40vw;
-    height: auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .screen--info h1{
     font-size: 30px;
     text-align: center;  
-    margin: 0; 
 } 
 .screen--info h2{
     font-size: 25px;
@@ -50,7 +48,7 @@ body{
     gap: 30px;
 }
 
-button{
+.btnStyle{
     position: relative;
     background-color: #FFFFFF;
     color: #000000;
@@ -64,25 +62,25 @@ button{
     border: 2px solid var(--clr);
     cursor: pointer;
 }
-button:hover{
+.btnStyle:hover{
     background-color: var(--clr);
     color: #000000;
     box-shadow: 0 0 35px var(--clr);
 }
 
-button:before{
+.btnStyle:before{
     inset: 100%;
     position: absolute;
     background: #27282c;
 }
 
-button i {
+.btnStyle i {
     position: absolute;
     inset: 0;
     display: block;
 }
 
-button i:before {
+.btnStyle i:before {
     content: '';
     position: absolute;
     top: 0;
@@ -94,12 +92,12 @@ button i:before {
     transition: 0.5s;
 }
 
-button:hover i:before{
+.btnStyle:hover i:before{
     width: 20px;
     left: 20%;
 }
 
-button i:after {
+.btnStyle i:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -111,7 +109,7 @@ button i:after {
     transition: 0.5s;
 }
 
-button:hover i:after{
+.btnStyle:hover i:after{
     width: 20px;
     left: 80%;
 }
@@ -123,6 +121,7 @@ button:hover i:after{
     height: auto;
     text-transform: uppercase;
     background-color: #FFFFFF;
+    color: #000000;
     border-radius: 5%;
     padding: 30px 20px;
     box-shadow: 
@@ -200,4 +199,102 @@ button:hover i:after{
     font-size: 11px;
     font-style: italic;
     color: #F00;
+}
+
+.section-screens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.light-screen, .purple-screen{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.purple-screen{
+    background-color: #9951E8;
+    color: #FFFFFF;
+}
+
+.section--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.section--title h1{
+    font-size: 40px;
+}
+
+.section--title h2{
+    font-size: 20px;
+}
+
+.section--body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.section--description{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 500px;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.section--description .btnDesc{
+    font-size: 20px;
+}
+.img-exemple{
+    box-shadow: 0 0 10px 2px#0DDB0D;
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #9951E8;
+}
+
+.sections--footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+    color: #FFFFFF;
+}
+
+.sections--footer section{
+    border-right: 2px solid #0DDB0D;
+    border-left: 2px solid #0DDB0D;
+    
+}
+
+.sections--footer section:first-child{
+    border-right: none;
+}
+.sections--footer section:last-child{
+    border-left: none;
+}
+
+.sections--footer .section--title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    width: 100%;
+    background-color: #27282c;
+    color: #999;
+    text-align: center;
+    padding: 10px 0;
 }

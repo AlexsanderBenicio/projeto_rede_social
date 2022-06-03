@@ -190,10 +190,10 @@ function screenLogin() {
     }, 300) 
 }
 function mainScreen() {
-    c('.screen--area').style.opacity = '0';
+    c('.main--screen').style.opacity = '0';
     setTimeout(()=>{
-        c('.screen--area').style.transition = 'all linear 0.5s';
-        c('.screen--area').style.opacity = '1';       
+        c('.main--screen').style.transition = 'all linear 0.5s';
+        c('.main--screen').style.opacity = '1';       
     }, 300)
 }
 
