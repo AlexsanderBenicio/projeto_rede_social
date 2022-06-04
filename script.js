@@ -215,3 +215,21 @@ let form = document.querySelector(".signup--Validator");
 let form2 = document.querySelector(".login--Validator");
 form.addEventListener('submit', signupValidator.handleSubmit)
 form2.addEventListener('submit', loginValidator.handleSubmit)
+
+function upScreen(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
+function decideButtonStatus() {
+    if (window.scrollY <= 100) {
+        document.querySelector('.scrollButton').style.display = 'none';
+    }else{
+        document.querySelector('.scrollButton').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', decideButtonStatus);

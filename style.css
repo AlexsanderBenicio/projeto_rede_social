@@ -220,6 +220,10 @@
     color: #FFFFFF;
 }
 
+.section--area:hover .interation{
+    text-shadow: 1px 1px 3px #0DDB0D;
+}
+
 .section--title{
     display: flex;
     justify-content: center;
@@ -276,6 +280,7 @@ footer{
 .sections--footer section{
     border-right: 2px solid #0DDB0D;
     border-left: 2px solid #0DDB0D;
+    min-width: 400px;
     
 }
 
@@ -291,10 +296,63 @@ footer{
     margin-bottom: 20px;
 }
 
+.sections--footer .section--body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ .email{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email span{
+    padding-left: 20px;
+}
+ .youtube{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.youtube span{
+    padding-left: 20px;
+}
+ .telegram{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.telegram span{
+    padding-left: 20px;
+}
+
+.our--products .section--body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .copyright{
     width: 100%;
     background-color: #27282c;
     color: #999;
     text-align: center;
     padding: 10px 0;
+}
+
+.scrollButton{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+    text-align: center;
+    padding-top: 10px;
 }
