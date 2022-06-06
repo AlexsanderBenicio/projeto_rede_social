@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_2.css">
     <title>Home - Rede Social</title>
 </head>
 <body>
-    <h1>Seja bem vindo(a)</h1>
+    <header class="flex-container-header">
+        <div class="landing-logo"></div>
+        <input type="text" class="landing-search" placeholder="🔍">
+        <div class="buttons-header">
+            <!-- <img src="home.png" alt="home icon" width=30 height=30> -->
+            <input type="image" name="home icon" src="home.png" width=30 height=30>
+            <input type="image" name="home icon" src="friends.png" width=30 height=30>
+            <input type="image" name="home icon" src="notification.png" width=30 height=30>
+            <input type="image" name="home icon" src="chat.png" width=30 height=30>
+        </div>
+        <div class="landing-plugins">
+            <p class="text-landing">Plugins</p>
+        </div>
+    </header>
+    <div class="flex-container-page">
+        <sidebar class="left-sidebar">
+            <div class="box-profile">
+                <img src="home.png" alt="some text" width=30 height=30>
+                <div class="name-profile">FelleX user</div>
+            </div>
+            <div class="box-groups"></div>
+        </sidebar>
+        <div class="content-center">
+            <section class="box-publication">
+                <input type="text" class="publication-bar" placeholder="Nova publicação...">
+                <div class="button-publication">
+                    <div class="button-photo-video">
+                        <input type="image" name="photo icon" src="foto.png" width=30 height=30>
+                        <p>Foto</p>
+                    </div>
+                    <div class="button-photo-video">
+                        <input type="image" name="video icon" src="video.png" width=30 height=30>
+                        <p>Vídeo</p>
+                    </div>
+                </div>
+            </section>
+            <main class="box-timeline">
+                <div class="timeline-publication">
+                    <div class="publication-header">
+                        <img src="placeholder-user.jpeg" alt="user placeholer" width=30 height=30>
+                        <div class="user-nickname">FelleX user 2</div>
+                    </div>
+                    <div class="publication-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci officia eius iste harum incidunt ullam, sint dolores voluptatum corrupti sunt ratione amet cum autem, 
+                        eveniet officiis ipsam velit sequi animi.</div>
+                    <div class="publication-comment">
+                        <div class="publication-reaction-buttons">
+                            <input type="image" name="like icon" src="like_bck.png" width=30 height=30>
+                            <input type="image" name="comment icon" src="comment-bck.png" width=30 height=30>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <siderbar class="right-sidebar">
+            <ul>Amigo 1</ul>
+            <ul>Amigo 2</ul>
+            <ul>Amigo 3</ul>
+            <ul>Amigo 4</ul>
+        </sidebar>
+    </div>
 </body>
 </html>
