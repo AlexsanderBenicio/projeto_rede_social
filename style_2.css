@@ -15,6 +15,7 @@
     height: 60px;
     background-color:#9951E8;
     width: 100%;
+
 }
 
 .buttons-header {
@@ -38,7 +39,11 @@
 .landing-logo {
     height: 40px;
     width: 150px;
-    background-color: #0DDB0D;
+    /* background-color: #3adb3a; */
+    background-color: #ADE5D8;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 }
 
 .landing-search {
@@ -112,12 +117,26 @@
 .box-groups {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     flex-grow: 1;
     width: 100%;
     background-color: #9951E8;
     border-radius: 10px;
+}
+
+.template-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    border-color: darkgray;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .content-center {
@@ -270,9 +289,28 @@
 }
 
 .right-sidebar {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
     width: 200px;
     background-color: #9951E8;
     border-radius: 10px;
     margin: 20px 10px;
+}
+
+.box-friends {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.template-friend {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
 }

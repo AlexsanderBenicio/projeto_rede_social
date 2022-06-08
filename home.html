@@ -12,11 +12,10 @@
         <div class="landing-logo"></div>
         <input type="text" class="landing-search" placeholder="🔍">
         <div class="buttons-header">
-            <!-- <img src="home.png" alt="home icon" width=30 height=30> -->
-            <input type="image" name="home icon" src="home.png" width=30 height=30>
-            <input type="image" name="home icon" src="friends.png" width=30 height=30>
-            <input type="image" name="home icon" src="notification.png" width=30 height=30>
-            <input type="image" name="home icon" src="chat.png" width=30 height=30>
+            <input type="image" name="home icon" src="home_bck.png" width=30 height=30>
+            <input type="image" name="friends icon" src="friends_bck.png" width=30 height=30>
+            <input type="image" name="notification icon" src="notification_bck.png" width=30 height=30>
+            <input type="image" name="chat icon" src="chat_bck.png" width=30 height=30>
         </div>
         <div class="landing-plugins">
             <p class="text-landing">Plugins</p>
@@ -25,21 +24,30 @@
     <div class="flex-container-page">
         <sidebar class="left-sidebar">
             <div class="box-profile">
-                <img src="home.png" alt="some text" width=30 height=30>
+                <img src="placeholder-user.jpeg" alt="some text" width=60 height=60>
                 <div class="name-profile">FelleX user</div>
             </div>
-            <div class="box-groups"></div>
+            <div class="box-groups">
+                <div class="template-group">
+                    <img src="group.png" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Aliança Rebelde</p>
+                </div>
+                <div class="template-group">
+                    <img src="group.png" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Imperio Galáctico</p>
+                </div>
+            </div>
         </sidebar>
         <div class="content-center">
             <section class="box-publication">
                 <input type="text" class="publication-bar" placeholder="Nova publicação...">
                 <div class="button-publication">
                     <div class="button-photo-video">
-                        <input type="image" name="photo icon" src="foto.png" width=30 height=30>
+                        <input type="image" name="photo icon" src="foto_bck.png" width=30 height=30>
                         <p>Foto</p>
                     </div>
                     <div class="button-photo-video">
-                        <input type="image" name="video icon" src="video.png" width=30 height=30>
+                        <input type="image" name="video icon" src="video_bck.png" width=30 height=30>
                         <p>Vídeo</p>
                     </div>
                 </div>
@@ -78,10 +86,25 @@
             </main>
         </div>
         <siderbar class="right-sidebar">
-            <ul>Amigo 1</ul>
-            <ul>Amigo 2</ul>
-            <ul>Amigo 3</ul>
-            <ul>Amigo 4</ul>
+            <p class="friends-title">Amigos</p>
+            <div class="box-friends">
+                <div class="template-friend">
+                    <img src="placeholder-user.jpeg" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Darth Vader</p>
+                </div>
+                <div class="template-friend">
+                    <img src="placeholder-user.jpeg" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Luke Skywalker</p>
+                </div>
+                <div class="template-friend">
+                    <img src="placeholder-user.jpeg" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Yoda</p>
+                </div>
+                <div class="template-friend">
+                    <img src="placeholder-user.jpeg" alt="friend photo" width=30 height=30>
+                    <p class="friend-name">Mace Windu</p>
+                </div>
+            </div>
         </sidebar>
     </div>
 </body>
